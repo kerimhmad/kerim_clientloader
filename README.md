@@ -21,7 +21,6 @@ Resources = {
 - No more Dumpers
 - Protects all your Scripts
 - No loss of Performance (0ms)
-- FiveM Asset Escrow Protected
 
 # Contact me
 Discord: kerimhmad (506740499475070977)
