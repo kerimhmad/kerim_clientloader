@@ -27,11 +27,8 @@ Resources = {
 
 ### Tebex: [kerim_clientloader](https://keriyem.tebex.io/package/5795918)
 
-|                                         |                                |
-|-------------------------------------|----------------------------|
-| Asset Escrow | Yes
-| Code is accessible       | No                 |
-| Subscription-based      | No                 |
-| Lines (approximately)  | 125+             |
-| Requirements                | Standalone |
-| Support                           | Yes                |
+### Contact me
+Discord: kerimhmad (506740499475070977)
+
+### Donate ❤️
+PayPal: https://paypal.me/kerimhmad
