@@ -10,8 +10,6 @@ With our script you can protect your scripts from dumps very easily and above al
 
 ### Config (resources.lua)
 ```
-EnableInstantLoad = true -- if true the client files loads instantly.
-
 Resources = {
     ["testscript"] = { -- Resource Name
         "config.lua",
