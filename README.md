@@ -25,8 +25,6 @@ Resources = {
 - No loss of Performance (0ms)
 - FiveM Asset Escrow Protected
 
-### Tebex: [kerim_clientloader](https://keriyem.tebex.io/package/5795918)
-
 # Contact me
 Discord: kerimhmad (506740499475070977)
 
