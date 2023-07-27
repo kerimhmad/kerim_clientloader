@@ -10,8 +10,6 @@ author "Keriyem (discord.gg/gQeKYvDTQt)"
 version "1.0.5"
 
 
-lua54 "yes"
-
 client_scripts {
     --"config.lua",
     --"client.lua",
