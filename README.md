@@ -30,5 +30,5 @@ Resources = {
 ### Contact me
 Discord: kerimhmad (506740499475070977)
 
-### Donate ❤️
+# Donate ❤️
 PayPal: https://paypal.me/kerimhmad
