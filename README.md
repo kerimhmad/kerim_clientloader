@@ -13,7 +13,6 @@ With our script you can protect your scripts from dumps very easily and above al
 Resources = {
     ["testscript"] = { -- Resource Name
         "config.lua",
-        "functions.lua",
         "client.lua",
     },
 }
