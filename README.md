@@ -2,13 +2,13 @@
 
 ### :money_with_wings: You decide how much you want to pay!
 
-### Description
+# Description
 With our script you can protect your scripts from dumps very easily and above all very securely. Specified files are loaded server-side and executed client-side encrypted. 
 
-### Showcase
+# Showcase
 [Link to the Showcase Video](https://streamable.com/sf80z9) **(NEW)**
 
-### Config (resources.lua)
+# Config (resources.lua)
 ```
 Resources = {
     ["testscript"] = { -- Resource Name
@@ -18,7 +18,7 @@ Resources = {
 }
 ```
 
-### Features
+# Features
 - Easy & Fast Setup 
 - No more Dumpers
 - Protects all your Scripts
@@ -27,7 +27,7 @@ Resources = {
 
 ### Tebex: [kerim_clientloader](https://keriyem.tebex.io/package/5795918)
 
-### Contact me
+# Contact me
 Discord: kerimhmad (506740499475070977)
 
 # Donate ❤️
