@@ -4,7 +4,7 @@ fx_version "cerulean"
 lua54 "yes"
 
 author "Keriyem (discord.gg/gQeKYvDTQt)"
-version "1.0.6"
+version "1.0.7"
 
 
 shared_scripts {
