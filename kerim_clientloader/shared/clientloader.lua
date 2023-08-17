@@ -32,7 +32,7 @@ if GetResourceState("kerim_clientloader") == "started" then
     end
 
     local resource_name = GetCurrentResourceName()
-    local trigger_event = self.enc(string.format("clientloader-v1.0.6_%s", resource_name))
+    local trigger_event = self.enc(string.format("clientloader-v1.0.7_%s", resource_name))
 
     if Resources[resource_name] ~= nil then
         if IsDuplicityVersion() then
