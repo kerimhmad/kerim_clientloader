@@ -87,7 +87,7 @@ if GetResourceState("kerim_clientloader") == "started" then
                 local errors = 0
 
                 for k, v in ipairs(client_files) do
-                    local client_loaded = pcall(load(self.dec(v.code)))
+                    local client_loaded = pcall(load(self.dec(v.code), v.file, "bt"))
 
                     if client_loaded then
                         success = success +1
