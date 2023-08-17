@@ -4,7 +4,7 @@
 With our script you can protect your scripts from dumps very easily and above all very securely. Specified files are loaded server-side and executed client-side encrypted. 
 
 ### Showcase
-[Link to the Showcase Video](https://streamable.com/sf80z9) **(NEW)**
+[Link to the Showcase Video](https://streamable.com/sf80z9)
 
 ### Config (resources.lua)
 ```
@@ -25,7 +25,7 @@ Resources = {
 - No loss of Performance (0ms)
 
 # Contact me
-Discord: kerimhmad (506740499475070977)
+Discord: der69er (506740499475070977)
 
 # Donate ❤️
 PayPal: https://paypal.me/kerimhmad
