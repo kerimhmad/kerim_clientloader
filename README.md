@@ -25,7 +25,7 @@ Resources = {
 - No loss of Performance (0ms)
 
 # Contact me
-Discord: der69er (506740499475070977)
+Discord: kerim.52 (506740499475070977)
 
 # Donate ❤️
 PayPal: https://paypal.me/kerimhmad
