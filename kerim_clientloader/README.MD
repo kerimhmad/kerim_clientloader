@@ -1,4 +1,4 @@
-# Clientloader by der69er (discord.gg/gQeKYvDTQt)
+# Clientloader by kerim.52 (discord.gg/gQeKYvDTQt)
 
 
 what your fxmanifest.lua & resources.lua should look like:
