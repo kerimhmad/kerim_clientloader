@@ -3,7 +3,7 @@ fx_version "cerulean"
 
 lua54 "yes"
 
-author "der69er (discord.gg/gQeKYvDTQt)"
+author "kerim.52 (discord.gg/gQeKYvDTQt)"
 version "1.0.7"
 
 
