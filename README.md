@@ -1,5 +1,7 @@
 # Clientloader (AntiDump)
 
+# New Update soon...
+
 ### Description
 With our script you can protect your scripts from dumps very easily and above all very securely. Specified files are loaded server-side and executed client-side encrypted. 
 
