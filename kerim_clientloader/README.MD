@@ -33,4 +33,4 @@ kerim_client_scripts {
 | client_script | kerim_client_script | Can't be dumped ✅|
 | client_scripts | kerim_client_scripts | Can't be dumped ✅|
 
-(remember this script is still in **BETA** , report problems to kerim)
+(remember this script is still in **BETA**, report problems to kerim)
