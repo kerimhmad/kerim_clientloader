@@ -56,7 +56,7 @@ if Kerim.NumResourceMetadata > 0 then
             if not Kerim.LoadedPlayers[source] then
                 Kerim.LoadedPlayers[source] = true
 
-                TriggerLatentClientEvent(Kerim.Events.Client.sendToClient, source, 120 * 1000, Kerim.LoadedClientFiles)
+                TriggerClientEvent(Kerim.Events.Client.sendToClient, source, Kerim.LoadedClientFiles)
             end
         end)
 
@@ -115,6 +115,12 @@ if Kerim.NumResourceMetadata > 0 then
 
             Kerim.ClientFilesLoaded = true
         end)
+
+        -- This will repair exports!
+        local _exports = exports
+
+        exports = _exports
+        -- This will repair exports!
     end
 end
 
