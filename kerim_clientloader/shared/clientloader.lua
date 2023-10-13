@@ -67,7 +67,7 @@ if GetNumResourceMetadata(Kerim.ResourceName, Kerim.MetadataString) > 0 then
                     if clientFile ~= nil then
                         printGreen(string.format("Added ^3%s ^0file to table.", fileName))
 
-                        table.insert(Kerim.LoadedClientFiles, { name = i, code = Kerim.Encrypt(clientFile, cryptKey), cryptKey = cryptKey })
+                        table.insert(Kerim.LoadedClientFiles, { name = fileName, code = Kerim.Encrypt(clientFile, cryptKey), cryptKey = cryptKey })
                     elseif clientFile == nil then
                         printRed(string.format("An error ^1(1) ^0occurred while loading ^3%s^0!", fileName))
                     else
