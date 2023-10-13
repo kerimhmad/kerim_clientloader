@@ -1,4 +1,6 @@
 CreateThread(function()
+    Wait(5000)
+
     local version = GetResourceMetadata(GetCurrentResourceName(), "version")
 
     printGreen(string.format("Script ^3v%s ^0successfully loaded.", version))
