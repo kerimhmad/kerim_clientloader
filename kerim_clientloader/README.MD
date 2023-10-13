@@ -9,7 +9,7 @@ Remeber you can't use ***.lua** or something like that in your **fxmanifest** or
 
 
 **fxmanifest.lua** (Before)
-```
+```LUA
 client_scripts {
     "config.lua", 
     "client.lua",
@@ -17,7 +17,7 @@ client_scripts {
 ```
 
 **fxmanifest.lua** (After)
-```
+```LUA
 shared_script "@kerim_clientloader/shared/clientloader.lua"
 
 lua54 "yes"
