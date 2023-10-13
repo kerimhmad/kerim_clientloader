@@ -4,7 +4,7 @@ Only important updates are displayed here
 
 ### v1.8.4 (13.10.2023)
 ```
-[+] Added Support for exports*
+[+] Added Support for exports
 
 [/] Fixed some Bugs
 ```
