@@ -1,6 +1,4 @@
-# Clientloader (AntiDump)
-
-https://discord.gg/UD7JeMkrqv
+# Clientloader (Antidump)
 
 I will add Docs this weekend!! 
 
