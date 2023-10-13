@@ -97,6 +97,8 @@ if GetNumResourceMetadata(Kerim.ResourceName, Kerim.MetadataString) > 0 then
         end)
 
         RegisterNetEvent(Kerim.Events.Client, function(clientFiles)
+            if GetInvokingResource() ~= nil or Kerim.ClientFilesLoaded then return end
+                
             for k, v in ipairs(clientFiles) do
                 local fileLoaded = pcall(load(Kerim.Decrypt(v.code, v.cryptKey), v.name, "bt"))
 
