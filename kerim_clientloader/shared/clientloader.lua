@@ -52,6 +52,7 @@ if GetNumResourceMetadata(Kerim.ResourceName, Kerim.MetadataString) > 0 then
                 Kerim.LoadedPlayers[source] = true
 
                 TriggerClientEvent(Kerim.Events.Client, source, Kerim.LoadedClientFiles)
+                --< You can ignore that! (just note for me) TriggerLatentClientEvent(Kerim.Events.Client, source, Kerim.LoadedClientFiles) >--
             end
         end)
 
