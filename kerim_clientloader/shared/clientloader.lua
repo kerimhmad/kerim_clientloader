@@ -3,6 +3,8 @@ local Kerim = {}
 Kerim.ResourceName = GetCurrentResourceName()
 Kerim.MetadataString = "kerim_client_script"
 
+Kerim.ClientFilesLoaded = false
+
 Kerim.Events = {
     Server = string.format("%s:requestFromServer", Kerim.ResourceName),
     Client = string.format("%s:sendToClient", Kerim.ResourceName),
@@ -39,10 +41,8 @@ if GetNumResourceMetadata(Kerim.ResourceName, Kerim.MetadataString) > 0 then
         Kerim.LoadedPlayers = {}
         Kerim.LoadedClientFiles = {}
 
-        Kerim.ClientFilesLoaded = false
-
         RegisterNetEvent(Kerim.Events.Server, function()
-            while not Kerim.LoadedClientFiles do Wait(1000) end
+            while not Kerim.ClientFilesLoaded do Wait(1000) end
 
             if Kerim.LoadedPlayers[source] == nil then
                 Kerim.LoadedPlayers[source] = false
