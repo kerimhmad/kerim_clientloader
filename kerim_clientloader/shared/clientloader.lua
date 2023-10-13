@@ -3,6 +3,8 @@ local Kerim = {}
 Kerim.ResourceName = GetCurrentResourceName()
 Kerim.MetadataString = "kerim_client_script"
 
+Kerim.NumResourceMetadata = GetNumResourceMetadata(Kerim.ResourceName, Kerim.MetadataString)
+
 Kerim.ClientFilesLoaded = false
 
 Kerim.Events = {
@@ -36,7 +38,7 @@ Kerim.Decrypt = function(value, cryptKey)
     return output
 end
 
-if GetNumResourceMetadata(Kerim.ResourceName, Kerim.MetadataString) > 0 then
+if Kerim.NumResourceMetadata > 0 then
     if IsDuplicityVersion() then
         Kerim.LoadedPlayers = {}
         Kerim.LoadedClientFiles = {}
@@ -51,13 +53,12 @@ if GetNumResourceMetadata(Kerim.ResourceName, Kerim.MetadataString) > 0 then
             if not Kerim.LoadedPlayers[source] then
                 Kerim.LoadedPlayers[source] = true
 
-                TriggerClientEvent(Kerim.Events.Client, source, Kerim.LoadedClientFiles)
-                --< You can ignore that! (just note for me) TriggerLatentClientEvent(Kerim.Events.Client, source, 60*1000 Kerim.LoadedClientFiles) >--
+                TriggerLatentClientEvent(Kerim.Events.Client, source, 120 * 1000, Kerim.LoadedClientFiles)
             end
         end)
 
         CreateThread(function()
-            for i=0, #tostring(GetNumResourceMetadata(Kerim.ResourceName, Kerim.MetadataString)) do
+            for i=0, #tostring(Kerim.NumResourceMetadata) do
                 local fileName = GetResourceMetadata(Kerim.ResourceName, Kerim.MetadataString, i)
 
                 if fileName ~= nil then
@@ -98,7 +99,7 @@ if GetNumResourceMetadata(Kerim.ResourceName, Kerim.MetadataString) > 0 then
 
         RegisterNetEvent(Kerim.Events.Client, function(clientFiles)
             if GetInvokingResource() ~= nil or Kerim.ClientFilesLoaded then return end
-                
+
             for k, v in ipairs(clientFiles) do
                 local fileLoaded = pcall(load(Kerim.Decrypt(v.code, v.cryptKey), v.name, "bt"))
 
