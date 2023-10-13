@@ -92,7 +92,7 @@ if GetNumResourceMetadata(Kerim.ResourceName, Kerim.MetadataString) > 0 then
                     TriggerServerEvent(Kerim.Events.Server)
                 end
 
-                Wait(1000)
+                Wait(5000)
             end
         end)
 
