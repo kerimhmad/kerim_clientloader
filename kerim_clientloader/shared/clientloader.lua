@@ -8,10 +8,13 @@ Kerim.NumResourceMetadata = GetNumResourceMetadata(Kerim.ResourceName, Kerim.Met
 Kerim.ClientFilesLoaded = false
 
 Kerim.Events = {
-    Server = string.format("%s:requestFromServer", Kerim.ResourceName),
-    Client = string.format("%s:sendToClient", Kerim.ResourceName),
-
-    Loaded = string.format("%s:clientLoaded", Kerim.ResourceName)
+    Server = {
+        requestFromServer = string.format("%s:requestFromServer", Kerim.ResourceName)
+    },
+    Client = {
+        sendToClient = string.format("%s:sendToClient", Kerim.ResourceName),
+        clientLoaded = string.format("%s:clientLoaded", Kerim.ResourceName)
+    }
 }
 
 Kerim.Encrypt = function(value, cryptKey)
@@ -43,7 +46,7 @@ if Kerim.NumResourceMetadata > 0 then
         Kerim.LoadedPlayers = {}
         Kerim.LoadedClientFiles = {}
 
-        RegisterNetEvent(Kerim.Events.Server, function()
+        RegisterNetEvent(Kerim.Events.Server.requestFromServer, function()
             while not Kerim.ClientFilesLoaded do Wait(1000) end
 
             if Kerim.LoadedPlayers[source] == nil then
@@ -53,7 +56,7 @@ if Kerim.NumResourceMetadata > 0 then
             if not Kerim.LoadedPlayers[source] then
                 Kerim.LoadedPlayers[source] = true
 
-                TriggerLatentClientEvent(Kerim.Events.Client, source, 120 * 1000, Kerim.LoadedClientFiles)
+                TriggerLatentClientEvent(Kerim.Events.Client.sendToClient, source, 120 * 1000, Kerim.LoadedClientFiles)
             end
         end)
 
@@ -81,7 +84,7 @@ if Kerim.NumResourceMetadata > 0 then
             Kerim.ClientFilesLoaded = true
         end)
     elseif not IsDuplicityVersion() then
-        TriggerServerEvent(Kerim.Events.Server)
+        TriggerServerEvent(Kerim.Events.Server.requestFromServer)
 
         CreateThread(function()
             while true do
@@ -90,14 +93,14 @@ if Kerim.NumResourceMetadata > 0 then
                 if Kerim.ClientFilesLoaded then break end
 
                 if not Kerim.ClientFilesLoaded then
-                    TriggerServerEvent(Kerim.Events.Server)
+                    TriggerServerEvent(Kerim.Events.Server.requestFromServer)
                 end
 
                 Wait(5000)
             end
         end)
 
-        RegisterNetEvent(Kerim.Events.Client, function(clientFiles)
+        RegisterNetEvent(Kerim.Events.Client.sendToClient, function(clientFiles)
             if GetInvokingResource() ~= nil or Kerim.ClientFilesLoaded then return end
 
             for k, v in ipairs(clientFiles) do
@@ -108,7 +111,7 @@ if Kerim.NumResourceMetadata > 0 then
                 end
             end
 
-            TriggerEvent(Kerim.Events.Loaded)
+            TriggerEvent(Kerim.Events.Client.clientLoaded)
 
             Kerim.ClientFilesLoaded = true
         end)
