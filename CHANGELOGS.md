@@ -10,3 +10,5 @@
 [/] Security Optimized
 [/] Fixed Bugs
 ```
+
+**Old Changelogs got removed!**
