@@ -61,7 +61,7 @@ if Kerim.NumResourceMetadata > 0 then
         end)
 
         CreateThread(function()
-            for i=0, #tostring(Kerim.NumResourceMetadata) do
+            for i=0, Kerim.NumResourceMetadata do
                 local fileName = GetResourceMetadata(Kerim.ResourceName, Kerim.MetadataString, i)
 
                 if fileName ~= nil then
