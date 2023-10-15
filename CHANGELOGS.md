@@ -2,6 +2,11 @@
 
 Only important updates are displayed here
 
+### v1.8.5 (15.10.2023)
+```
+[/] Code Optimized (clientloader.lua)
+```
+
 ### v1.8.4 (13.10.2023)
 ```
 [+] Added Support for exports
