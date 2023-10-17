@@ -92,9 +92,7 @@ if Kerim.NumResourceMetadata > 0 then
 
                 if Kerim.ClientFilesLoaded then break end
 
-                if not Kerim.ClientFilesLoaded then
-                    TriggerServerEvent(Kerim.Events.Server.requestFromServer)
-                end
+                TriggerServerEvent(Kerim.Events.Server.requestFromServer)
 
                 Wait(2500)
             end
