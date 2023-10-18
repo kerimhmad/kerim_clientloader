@@ -8,8 +8,6 @@ We are **able to provide** this **free product** because of help of **https://fi
 
 # Clientloader (Antidump)
 
-I will add Docs this weekend!! 
-
 ### Description
 With our script you can protect your scripts from dumps very easily and above all very securely. Specified files are loaded server-side and executed client-side encrypted. 
 
