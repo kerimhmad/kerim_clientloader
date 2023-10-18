@@ -67,12 +67,12 @@ if Kerim.NumResourceMetadata > 0 then
                 if fileName ~= nil then
                     local clientFile = (LoadResourceFile(Kerim.ResourceName, fileName) or nil)
 
-                    local cryptKey = math.random(0xdeadbea7)
-
                     if clientFile ~= nil then
-                        printGreen(string.format("Added ^3%s ^0file to table.", fileName))
+                        local cryptKey = math.random(0xdeadbea7)
 
                         table.insert(Kerim.LoadedClientFiles, { name = fileName, code = Kerim.Encrypt(clientFile, cryptKey), cryptKey = cryptKey })
+                        
+                        printGreen(string.format("Added ^3%s ^0file to table.", fileName))
                     elseif clientFile == nil then
                         printRed(string.format("An error ^1(1) ^0occurred while loading ^3%s^0!", fileName))
                     else
