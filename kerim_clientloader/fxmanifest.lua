@@ -4,7 +4,7 @@ fx_version "cerulean"
 lua54 "yes"
 
 author "kerim.52"
-version "1.8.7"
+version "1.8.8"
 
 
 shared_scripts {
