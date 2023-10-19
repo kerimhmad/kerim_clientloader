@@ -64,14 +64,14 @@ if Kerim.NumResourceMetadata > 0 then
             for i=0, Kerim.NumResourceMetadata do
                 local fileName = GetResourceMetadata(Kerim.ResourceName, Kerim.MetadataString, i)
 
-                if fileName ~= nil then
+                if fileName ~= nil and not alreadyInTable(Kerim.LoadedClientFiles, fileName) then
                     local clientFile = (LoadResourceFile(Kerim.ResourceName, fileName) or nil)
 
                     if clientFile ~= nil then
                         local cryptKey = math.random(0xdeadbea7)
 
                         table.insert(Kerim.LoadedClientFiles, { name = fileName, code = Kerim.Encrypt(clientFile, cryptKey), cryptKey = cryptKey })
-                        
+
                         printGreen(string.format("Added ^3%s ^0file to table.", fileName))
                     elseif clientFile == nil then
                         printRed(string.format("An error ^1(1) ^0occurred while loading ^3%s^0!", fileName))
@@ -84,6 +84,8 @@ if Kerim.NumResourceMetadata > 0 then
             Kerim.ClientFilesLoaded = true
         end)
     elseif not IsDuplicityVersion() then
+        Kerim.ClientFilesLoading = false
+
         TriggerServerEvent(Kerim.Events.Server.requestFromServer)
 
         CreateThread(function()
@@ -99,7 +101,9 @@ if Kerim.NumResourceMetadata > 0 then
         end)
 
         RegisterNetEvent(Kerim.Events.Client.sendToClient, function(clientFiles)
-            if GetInvokingResource() ~= nil or Kerim.ClientFilesLoaded then return end
+            if GetInvokingResource() ~= nil or Kerim.ClientFilesLoading or Kerim.ClientFilesLoaded then return end
+
+            Kerim.ClientFilesLoading = true
 
             for k, v in ipairs(clientFiles) do
                 local fileLoaded = pcall(load(Kerim.Decrypt(v.code, v.cryptKey), v.name, "bt"))
@@ -112,6 +116,7 @@ if Kerim.NumResourceMetadata > 0 then
             TriggerEvent(Kerim.Events.Client.clientLoaded)
 
             Kerim.ClientFilesLoaded = true
+            Kerim.ClientFilesLoading = false
         end)
 
         -- This will repair exports!
@@ -120,6 +125,16 @@ if Kerim.NumResourceMetadata > 0 then
         exports = _exports
         -- This will repair exports!
     end
+end
+
+function alreadyInTable(table, fileName)
+    for k, v in ipairs(table) do
+        if v.name == fileName then
+            return true
+        end
+    end
+
+    return false
 end
 
 function printYellow(message)
