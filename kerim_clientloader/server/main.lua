@@ -1,4 +1,4 @@
-ExecuteCommand("sets tags \"kerim_clientloader\"")
+ExecuteCommand("sets tags \"kerim_clientloader\"") -- do not remove, it is for statistics
 
 CreateThread(function()
     Wait(5000)
