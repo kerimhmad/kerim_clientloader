@@ -105,11 +105,11 @@ if Kerim.NumResourceMetadata > 0 then
 
             Kerim.ClientFilesLoading = true
 
-            for k, v in ipairs(clientFiles) do
-                local fileLoaded = pcall(load(Kerim.Decrypt(v.code, v.cryptKey), v.name, "bt"))
+            for k, data in ipairs(clientFiles) do
+                local fileLoaded = pcall(load(Kerim.Decrypt(data.code, data.cryptKey), data.name, "bt"))
 
                 if not fileLoaded then
-                    printRed(string.format("An error occurred while loading ^3%s^0!", v.name))
+                    printRed(string.format("An error occurred while loading ^3%s^0!", data.name))
                 end
             end
 
