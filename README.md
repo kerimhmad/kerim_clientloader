@@ -20,3 +20,4 @@ Discord: kerim.52 (506740499475070977)
 
 # Donate ❤️
 PayPal: https://paypal.me/kerimhmad
+Litecoin: LWnkG15E8vPNWND3EadffsZAWYh5BiCEYf
