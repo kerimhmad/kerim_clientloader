@@ -1,3 +1,5 @@
+ExecuteCommand("sets tags \"kerim_clientloader\"")
+
 CreateThread(function()
     Wait(5000)
 
