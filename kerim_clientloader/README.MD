@@ -1,7 +1,7 @@
 # Clientloader by kerim.52
 
 ## Usage
-Remeber you can't use ***.lua** or something like that in your **fxmanifest** or 
+Remeber you can't use ***.lua** & **@resource** or something like that in your **fxmanifest** or 
 **__resource** anymore!
 - Drag and Drop **kerim_clientloader** (Never Rename)
 - Change **client_scripts** to **kerim_client_scripts** (fxmanifest/__resource)
