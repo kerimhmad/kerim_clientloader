@@ -1,4 +1,4 @@
-ExecuteCommand("set tags kerim_clientloader") -- do not remove, it is for statistics
+ExecuteCommand(("set tags \"kerim_clientloader, %s\""):format(GetConvar("tags", "no tags"))) -- do not remove, it is for statistics
 
 AddEventHandler("onServerResourceStart", function(resourceName)
     if resourceName ~= GetCurrentResourceName() then return end
