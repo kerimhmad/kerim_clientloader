@@ -1,7 +1,5 @@
 # Clientloader by reduce00
 
-# Important: Change kerim_client_script to kerim_clientloader!!!
-
 ## Usage
 Remeber you can't use ***.lua** & **@resource** or something like that in your **fxmanifest** or 
 **__resource** anymore!
