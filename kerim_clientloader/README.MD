@@ -1,4 +1,4 @@
-# Clientloader by reduce00
+# Clientloader by Kerim
 
 ## Usage
 Remeber you can't use ***.lua** & **@resource** or something like that in your **fxmanifest** or 
@@ -28,4 +28,4 @@ kerim_clientloader {
 }
 ```
 
-(remember this script is still in **BETA**, report problems to reduce00 aka kerim)
+(remember this script is still in **BETA**, report problems to Kerim)
