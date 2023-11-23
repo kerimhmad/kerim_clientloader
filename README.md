@@ -1,5 +1,5 @@
-# fiveguard.net
-For better **paid anticheat** check out **https://store.fiveguard.ac/**.
+# PAID VERSION
+-> https://reduce.tebex.io/package/5968007
 
 # Clientloader (Antidump)
 
