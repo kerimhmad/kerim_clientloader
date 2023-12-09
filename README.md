@@ -1,5 +1,6 @@
 # PAID VERSION
 -> https://reduce.tebex.io/package/5968007
+or
 -> https://reduce.sellpass.io/products/clientloader (CHEAPER)
 
 # Clientloader (Antidump)
