@@ -17,7 +17,7 @@ With our script you can protect your scripts from dumps very easily and above al
 - No loss of Performance (0ms)
 
 # Contact me
-Discord: kerim.52 (506740499475070977)
+Discord: reduce00 (1170329191749787770)
 
 # Donate ❤️
 PayPal: https://paypal.me/kerimhmad
