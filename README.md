@@ -1,24 +1,20 @@
-# PAID VERSION
--> https://reduce.tebex.io/package/5968007
--> https://reduce.sellpass.io/products/clientloader (CHEAPER)
+### Purchase
+-> https://reduce.sellpass.io/products/clientloader **CHEAPEST**
+-> https://reduce.tebex.io/package/5968007 **MOST PAYMENTS**
 
-# Clientloader (Antidump)
+### About Reduce Clientloader
 
-### Description
-With our script you can protect your scripts from dumps very easily and above all very securely. Specified files are loaded server-side and executed client-side encrypted. 
+**What it does**
+Our script protects your server from so-called "dumps" that hackers can use to steal client-side files. Through server-side download and secure client-side execution, you are safeguarded against such attacks.
 
-### Showcase
-[Link to the Showcase Video](https://streamable.com/sf80z9) **(OLD)**
+**Features**
+\- Quick & Easy Installation
+\- No more files can be stolen
+\- Protects all your scripts (LUA)
+\- No performance losses (0,0ms)
 
-### Features
-- Easy & Fast Setup 
-- No more Dumpers
-- Protects all your Scripts
-- No loss of Performance (0ms)
+### How do I receive my product?
+The purchased product will be sent to your specified Keymaster (Cfx.re) account within 24 hours.
+The script is protected by the [**Fivem Asset Escrow System**](https://forum.cfx.re/t/introducing-asset-escrow-for-your-resources/4777151)
 
-# Contact me
-Discord: reduce00 (1170329191749787770)
-
-# Donate ❤️
-PayPal: https://paypal.me/kerimhmad
-Litecoin: LWnkG15E8vPNWND3EadffsZAWYh5BiCEYf
+**Documentation:** [*reduce_clientloader*](https://reduce-services.gitbook.io/docs/clientloader/installation)
